@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login Page</title>
+    <link href="/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-------------header starts------------------->
+    <header id="header" class="header">
+
+        <div class="header-1">
+
+            <a href="/index.html" class="logo">BOOKISH</a>
+
+            <form id="searchbar" action="#" class="search-form">
+
+                <input type="search" id="search-box" placeholder="Search Here..." />
+                <label for="search-box" class="bx bx-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn"><i class='bx bx-search'></i></div>
+                <div id="user-login-btn" class="user-login-btn"><i class='bx bxs-user-circle'></i></div>
+            </div>
+        </div>
+        <div class="header-2">
+
+            <nav id="navbar" class="navbar">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn">
+                    <span class="nav-icon"></span>
+                </label>
+                <div class="menu">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Browse</a>
+                    <a href="#">Create</a>
+                    <a href="#">Library</a>
+                    <a href="Login.html">Login</a>
+                </div>
+            </nav>
+        </div>
+        <!------------------navigation bar scroll--------------------->
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("header").style.top = "0";
+                } else {
+                    document.getElementById("header").style.top = "200px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </header>
+    <!---------------------Header close---------------------->
+
+    
+    <!--login form-->
+    
+    
+    <div class="login_Form_Box">
+        <h1>Sign In</h1>
+
+        <!--email textbox-->
+        <div class="Input_Textbox">
+            <input type="email" id="Email_TextBox" placeholder="Enter Your Email" required>
+            <i class='bx bxs-envelope'></i>
+        </div>
+
+        <!--password textbox-->
+        <div class="Input_Textbox">
+            <input type="password" id="Password_TextBox" placeholder="Enter Your Password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+
+
+        <div class="remember_forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="ForgotPass.html">Forgot Password?</a>
+        </div>
+        
+        
+        <div>
+            <button ID="Login_Btn" class="form_Button">Login</button>
+        </div>
+        
+        
+        <div class="Form_link">
+            <p>Don't have an account? <a href="register.html">Register Now</a></p>
+        </div>
+        
+        
+        <div class="Form_link">
+            <p>Or Sign Up With</p>
+        </div>
+        
+    
+    <!--google and facebook auth-->
+    
+        <div class="social_media">
+            <div class="">
+                <button id="google-login-btn" class="google_btn"><i class='bx bxl-google'></i></button>
+                <button id="facebook-login-btn" class="facebook_btn"><i class='bx bxl-facebook'></i></button>
+            </div>
+        </div>
+    </div>
+    <!---------------script file-------------------------->
+    <script type="module" src="/js/LoginDB.js"></script>
+    <!-- <script type="module" src="/config/firebaseConfig.js"></script> -->
+
+
+    <!------------------------Add footer--------------------------------------->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Home </a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Featured </a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Category </a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Reviews </a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Feedback </a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> account info </a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> privacy policy </a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> payment method </a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> our serivces </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class='bx bxs-phone'></i> 8655042427 </a>
+                <a href="#"> <i class='bx bxs-phone'></i> 9222242428 </a>
+                <a href="#"> <i class='bx bxs-envelope'></i> anshuamishra@gmail.com </a>
+                <a href="#"> <i class='bx bxs-envelope'></i> jaykanade024@gmail.com </a>
+            </div>
+        </div>
+
+        <div class="credit"> <span> Bookish </span>copyright ©2023 all rights reserved! </div>
+    </section>
+</body>
+</html>
