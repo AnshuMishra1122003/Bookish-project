@@ -32,28 +32,33 @@
                     <span class="nav-icon"></span>
                 </label>
                 <div class="menu">
-                    <a href="#" class="active">Search</a>
-                    <a href="#">Browse</a>
-                    <a href="#">Create</a>
-                    <a href="#">Library</a>
-                    <a href="Login.html">Login</a>
+                    <a href="/index.html" class="active">Home</a>
+                    <a href="#">Genres</a>
+                    <a href="#">History</a>
+                    <a href="#">Profile</a>
+                    <a href="#">User Settings</a>
                 </div>
+
             </nav>
         </div>
+    </header>
         <!------------------navigation bar scroll--------------------->
         <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("header").style.top = "0";
-            } else {
-                document.getElementById("header").style.top = "200px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
+            var prevScrollpos = window.pageYOffset;
+        
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+        
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("header").style.top = "0";
+                } else {
+                    document.getElementById("header").style.top = "-80px"; // You can adjust the value based on your header height
+                }
+        
+                prevScrollpos = currentScrollPos;
+            };
         </script>
-    </header>
+        
     <!---------------------Header close---------------------->
 
 
@@ -90,7 +95,7 @@
 
             <!--Terms and condition checkbox-->
             <div class="TandC">
-                <label><input type="checkbox" /> I've read and accept the <a href="T&C.html">Terms and Conditions</a></label>
+                <label><input type="checkbox" /> I've read and accept the <a href="/T&C.html">Terms and Conditions</a></label>
             </div>
 
             <!--Register button-->
@@ -100,7 +105,7 @@
 
             <!--login link-->
             <div class="Form_link">
-                <p>Already have an account? <a href="Login.html">Login</a></p>
+                <p>Already have an account? <a href="/Login.html">Login</a></p>
             </div>
         </div>
         <!--------------------RegDB.js-------------------------->
@@ -111,35 +116,28 @@
 
     <section class="footer">
 
-        <div class="box-container">
+        <div class="footer-container">
 
-            <div class="box">
-                <h3>Quick Links</h3>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Home </a>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Featured </a>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Category </a>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Reviews </a>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> Feedback </a>
-            </div>
+            <div class="row">
 
-            <div class="box">
-                <h3>extra links</h3>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> account info </a>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> privacy policy </a>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> payment method </a>
-                <a href="#"> <i class='bx bx-right-arrow-alt'></i> our serivces </a>
-            </div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#"></i>All Tags</a>
+                    </li>
+                    <li>
+                        <a href="#"></i>Account Info</a>
+                    </li>
+                    <li>
+                        <a href="#"></i>Terms and Condition</a>
+                    </li>
+                    <li style="border-right: none">
+                        <a href="#"></i>Contact Us</a>
+                    </li>
+                </ul>
+                <div class="credit"> <span> Bookish </span>copyright ©2023 all rights reserved! </div>
 
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#"> <i class='bx bxs-phone'></i> 8655042427 </a>
-                <a href="#"> <i class='bx bxs-phone'></i> 9222242428 </a>
-                <a href="#"> <i class='bx bxs-envelope'></i> anshuamishra@gmail.com </a>
-                <a href="#"> <i class='bx bxs-envelope'></i> jaykanade024@gmail.com </a>
             </div>
         </div>
-
-        <div class="credit"> <span> Bookish </span>copyright ©2023 all rights reserved! </div>
     </section>
 </body>
 </html>

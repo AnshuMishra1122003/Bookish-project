@@ -1,15 +1,17 @@
 ﻿//Google Authentication
 
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getAuth, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+import { getAuth, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
 const firebaseConfig = {
-    apiKey: "AIzaSyCqQ_DT-HXLU3cXRAfhF8gQAIUqXGF2QP4",
-    authDomain: "ty-bookish.firebaseapp.com",
-    projectId: "ty-bookish",
-    storageBucket: "ty-bookish.appspot.com",
-    messagingSenderId: "703454326025",
-    appId: "1:703454326025:web:32495458c13821922bf7d8"
+    apiKey: "AIzaSyCiNLLV_8GXpvSD7IeVUfp4dbq-_pcvn7w",
+    authDomain: "bookish-proj.firebaseapp.com",
+    databaseURL: "https://bookish-proj-default-rtdb.firebaseio.com",
+    projectId: "bookish-proj",
+    storageBucket: "bookish-proj.appspot.com",
+    messagingSenderId: "351432216616",
+    appId: "1:351432216616:web:59c46450f373a82ad9251d",
+    measurementId: "G-DH4RJ9TML1"
 };
 const app = initializeApp(firebaseConfig);
 
