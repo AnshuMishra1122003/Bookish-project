@@ -1,4 +1,4 @@
-﻿import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.3/firebase-app.js";
+﻿import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
 
 import {
   getDatabase,
